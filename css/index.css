@@ -1,0 +1,111 @@
+.about-section{
+    background-color: #fff;
+    padding: 50px;
+    margin: 50px auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.welcome {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4A90E2;
+    animation: scroll 10s linear infinite;
+}
+
+/* Animation */
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+/* Conteneur principal de la barre de recherche */
+.search-bar .bar{
+    display: flex;
+}
+.search-bar .bar input{
+     outline: none; 
+}
+.search-bar {
+    display: flex;
+    width: 70%;
+    /* border: 1px solid red; */
+    justify-content: center;
+    align-items: center;
+    /* outline: none; */
+    /* margin: 20px auto;
+    padding: 10px; */
+}
+.contour{
+    display: flex;
+    /* justify-content: center; */
+    /* border: 1px solid blue; */
+}
+.image{
+    background-image: url(../images/femme-sacs-provisions-studio-fond-jaune-isole_1303-14294.jpg);
+    /* background-position: center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    /* border: 1px solid red; */
+    width: 100%; 
+   /* width: 200%; */
+}
+.pagination {
+    color: black; 
+    /* border: 1px solid red; */
+   display: flex;
+   gap: 2rem;
+   float: left;
+   padding: 8px 16px;
+   text-decoration: none;
+ } 
+
+   .active{
+   /* border: 1px solid red; */
+   list-style-type: none;
+  /* background-color: blue; */
+ }
+
+/* Style de l'input */
+.search-input {
+    width: 80%;
+    max-width: 600px;
+    padding: 10px 15px;
+    border: 2px solid #4A90E2;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+/* Changement de couleur au focus */
+.search-input:focus {
+    border-color: #1C64F2;
+}
+
+/* Style du bouton */
+.search-button {
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover sur le bouton */
+.search-button:hover {
+    background-color: #8c2df2;
+}
